@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85" height="85" viewBox="0 0 85 85">
+  <defs>
+    <filter id="Ellipse_312" x="0" y="0" width="85" height="85" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffc807"/>
+      <stop offset="1" stop-color="#fc6e01"/>
+    </linearGradient>
+  </defs>
+  <g id="mood_btn" transform="translate(-145.5 -715.5)">
+    <g transform="matrix(1, 0, 0, 1, 145.5, 715.5)" filter="url(#Ellipse_312)">
+      <circle id="Ellipse_312-2" data-name="Ellipse 312" cx="35" cy="35" r="35" transform="translate(7.5 5.5)" fill="#fff"/>
+    </g>
+    <circle id="Ellipse_311" data-name="Ellipse 311" cx="32" cy="32" r="32" transform="translate(156 724)" fill="url(#linear-gradient)"/>
+    <path id="Path_5356" data-name="Path 5356" d="M374.751,798.488a22.275,22.275,0,0,1-35.809,0,3.692,3.692,0,1,1,5.932-4.4,14.89,14.89,0,0,0,23.945,0,3.692,3.692,0,0,1,5.932,4.4Z" transform="translate(-168.978 -25.387)" fill="#fff" fill-rule="evenodd"/>
+    <path id="Path_5357" data-name="Path 5357" d="M354.6,775.493a12.626,12.626,0,0,0-19.492,0,2.542,2.542,0,0,0,4.1,3A5.537,5.537,0,0,1,340.9,777a8.142,8.142,0,0,1,7.934.016A5.519,5.519,0,0,1,350.5,778.5a2.542,2.542,0,0,0,4.1-3Zm17.164,2.329a3.506,3.506,0,1,0-3.506-3.506A3.506,3.506,0,0,0,371.768,777.822Z" transform="translate(-168.978 -31.387)" fill="#fff" fill-rule="evenodd"/>
+    <text id="my_mood" data-name="my mood" transform="translate(161 760)" fill="#fff" font-size="12" font-family="Nunito-Black, Nunito" font-weight="800"><tspan x="0" y="0">my mood</tspan></text>
+  </g>
+</svg>

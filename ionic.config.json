@@ -1,5 +1,8 @@
 {
   "name": "itreat",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
   "type": "angular"
 }

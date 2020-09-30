@@ -1,0 +1,129 @@
+ion-header {
+    z-index: 99999;
+    ion-avatar {
+        height: 58px;
+        width: 58px;
+    }
+
+    position: absolute;
+    background: transparent;
+    --background: transparent;
+
+    ion-toolbar {
+        background: transparent;
+        --background: transparent;
+        --ion-background-color: transparent;
+
+        * {
+            color: #ffffff !important;
+        }
+    }
+
+    ion-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 100%;
+        max-height: 58px;
+        justify-content: space-between;
+
+        ion-text {
+            font-size: 13px;
+
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .progressToolbar {
+        --min-height: 8px;
+        padding: 0 16px;
+
+        div {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        ion-progress-bar {
+            --progress-background: #ffffff;
+            --background: #ffffff25;
+            --buffer-background: #978f8f;
+            margin-right: 1%;
+        }
+    }
+}
+
+ion-slides {
+    cursor: pointer;
+}
+
+.slideContainer {
+    background: rgb(255, 255, 255);
+    span {
+        position: absolute;
+        cursor: move;
+
+        .overlay {
+            position: absolute;
+            z-index: 99;
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(to bottom, rgba(0, 47, 75, 0.15) 0%, rgba(46, 46, 46, 0.15) 2%);
+        }
+
+        img {
+            height: 100vh;
+            object-fit: cover;
+        }
+    }
+}
+
+.likeInter {
+    position: absolute;
+    z-index: 9999999999;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+        max-width: 500px;
+        max-height: 500px;
+    }
+}
+
+ion-footer {
+    z-index: 999999999;
+    position: absolute;
+    bottom: 0;
+    --background: transparent;
+    --ion-background-color: transparent;
+
+    ion-toolbar {
+        --background: transparent;
+        --ion-background-color: transparent;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h3 {
+                color: #ffc90a;
+                margin-bottom: 0px;
+            }
+
+            h5 {
+                color: #ffffff;
+                font-size: 15px;
+                margin-top: 0px;
+            }
+        }
+    }
+}

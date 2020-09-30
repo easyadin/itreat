@@ -1,0 +1,57 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-item lines="none" detail="false">
+      <ion-avatar slot="start">
+        <img [src]="currentSlide.logo">
+      </ion-avatar>
+
+      <ion-label>
+        <h2><strong>Shop Name</strong></h2>
+        <h3>Shop Address</h3>
+        <h5>1.5 km away</h5>
+      </ion-label>
+    </ion-item>
+
+    <ion-buttons slot="primary">
+      <ion-button routerLink="/tabs/home">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+
+      <ion-text class="viewCount">
+        <ion-icon name="eye-outline"></ion-icon>
+        1k views
+      </ion-text>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+  <ion-toolbar class="progressToolbar">
+
+    <div>
+      <ion-progress-bar [value]="seenList.includes(slide.id) ? 1 : 0" *ngFor="let slide of allSlides" [id]="slide.id">
+      </ion-progress-bar>
+    </div>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ng-lottie [options]="options" (animationCreated)="animationCreated($event)" *ngIf="isLike"></ng-lottie> -->
+  <!-- sliders -->
+  <div class="slideContainer" #mainContent>
+    <span *ngFor="let slide of SlideList" #slides (swipeup)="onSwipeUp($event)" (click)="onClick(slide)" [id]="slide.id">
+      <div class="overlay"></div>
+      <img [src]="slide.img">
+    </span>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <div routerLink="/profilepage">
+      <img src="../../assets/arrow_up.svg">
+      <h3>Swipe up</h3>
+      <h5>View Profile</h5>
+    </div>
+  </ion-toolbar>
+</ion-footer>
